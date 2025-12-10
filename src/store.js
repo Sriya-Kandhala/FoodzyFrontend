@@ -1,7 +1,7 @@
 import { configureStore, createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { coupons } from "./Coupons";
 import axios from "axios";
-import apiUrl from "./axiosConfig";
+import apiUrl from "./axiosconfig";
 
 let cartSlice = createSlice({
     name:"cart",
