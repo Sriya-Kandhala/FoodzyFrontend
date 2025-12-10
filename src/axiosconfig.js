@@ -2,7 +2,7 @@ import axios from "axios";
 
 // ✅ CREATE INSTANCE
 const apiUrl = axios.create({
-  baseURL : "https://fooddzy-backend-express.vercel.app"
+  baseURL : "https://foodzy-backend-express-ueeu.vercel.app"
 });
 
 // ✅ REQUEST INTERCEPTOR (Attach Token)
