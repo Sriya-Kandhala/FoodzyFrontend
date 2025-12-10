@@ -1,5 +1,5 @@
 import React from 'react'
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 
 function SendOrderEmail({cartItems, gstAmount,  netAmount, customerEmail,totalPrice,discountAmount }) {
 
