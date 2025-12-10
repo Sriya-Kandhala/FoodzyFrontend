@@ -1,0 +1,127 @@
+/* FULL-WIDTH LONG NAVIGATION BAR */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Add this for your main content wrapper */
+.main-content {
+  margin-top: 80px; /* same as navbar height */
+  padding: 10px;    /* optional padding */
+}
+
+.big-navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;                    /* TALLER NAVBAR */
+  background: #0A4058;
+  color: white;          /* Deep Amazon-like blue */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;                 /* Wide spacing for long look */
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 200;
+}
+
+.brand {
+  font-size: 28px;                 /* BIG LOGO TEXT */
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-right {
+  display: flex;
+  gap: 1px; 
+                        /* More spacing = LONG navbar feel */
+}
+
+.nav-right a {
+  color: white;
+  font-size: 13px;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+
+  display: flex;              /* ⬅ keeps icon + text in a straight line */
+  align-items: center;        /* ⬅ vertically aligned center */
+  gap: 6px;                   /* ⬅ spacing between icon + label */
+  white-space: nowrap;        /* ⬅ prevents text from breaking into 2 lines */
+}
+
+.nav-right a:hover {
+  background: #177A9F;
+}
+
+.cart-btn {
+  /* background: #ffb700; */
+  color: white !important;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+/* ===== LANDING LOGIN / REGISTER NAVBAR ===== */
+.landing-auth {
+  position: fixed;
+  top: 15px;
+  right: 25px;
+  display: flex;
+  gap: 15px;
+  z-index: 9999;
+}
+
+/* ===== BUTTON STYLE ===== */
+.landing-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 20px;
+  background: rgba(249, 182, 57, 0.95);
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+}
+
+.landing-btn:hover {
+  background: white;
+  transform: scale(1.07);
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .landing-auth {
+    top: 10px;
+    right: 10px;
+    gap: 10px;
+  }
+
+  .landing-btn {
+    font-size: 14px;
+    padding: 6px 14px;
+  }
+}
+
+
+/* #0d9488; */

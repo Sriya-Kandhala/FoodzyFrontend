@@ -1,0 +1,39 @@
+
+.contact-page {
+  min-height: 75vh;          /* full screen height */
+  display: flex;
+  justify-content: center;    /* horizontal center */
+  align-items: center;        /* vertical center */
+  background: #f5f5f5;        /* optional light background */
+}
+
+.contact-info {
+  
+  width: 40%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-box {
+    flex-direction: column;
+  }
+
+  .contact-form,
+  .contact-info {
+    width: 100%;
+  }
+}

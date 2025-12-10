@@ -1,0 +1,77 @@
+Page background & center alignment
+.login-container {
+  min-height: 100vh;
+  background: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Card */
+.login-card {
+  background: #ffffff;
+  padding: 30px;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.login-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1f2933;
+}
+
+/* Form group */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Labels */
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Inputs */
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* Error text */
+.error-text {
+  color: #dc2626;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.login-btn:hover {
+  background: #1d4ed8;
+}

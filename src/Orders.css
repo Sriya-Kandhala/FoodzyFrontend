@@ -1,0 +1,123 @@
+
+
+/* MAIN PAGE */
+.orders-main {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #f9f9ff, #eef3ff);
+  padding-bottom: 60px;
+}
+
+.orders-title {
+  font-weight: 800;
+  font-size: 2rem;
+  color: #293241;
+  text-shadow: 0 2px 3px rgba(0,0,0,0.1);
+}
+
+.loading-text, .no-orders {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* CARD */
+.order-card-modern {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid #f1f1f1;
+}
+
+.order-card-modern:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* HEADER */
+.order-header-modern {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-header-modern h5 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #222;
+  font-weight: 700;
+}
+
+.status-badge {
+  background: linear-gradient(to right, #1dd1a1, #10ac84);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+}
+
+/* DATE */
+.order-date-modern {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* ITEMS */
+.order-items-modern {
+  margin: 18px 0;
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.order-items-modern::-webkit-scrollbar {
+  width: 6px;
+}
+.order-items-modern::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 10px;
+}
+
+.item-bubble {
+  background: #f7f9ff;
+  padding: 12px;
+  border-radius: 15px;
+  border: 1px solid #e3e7ff;
+  margin-bottom: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.05);
+}
+
+.item-bubble h6 {
+  margin: 0 0 6px 0;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.item-subtotal {
+  font-size: 0.85rem;
+  margin-top: 6px;
+  color: #444;
+}
+
+/* FOOTER */
+.order-footer-modern {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 12px;
+  font-size: 1rem;
+}
+
+.order-footer-modern strong {
+  font-size: 1.25rem;
+  color: #1e272e;
+}

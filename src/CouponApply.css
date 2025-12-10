@@ -1,0 +1,36 @@
+.coupon-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.coupon-input {
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  flex: 1;
+  outline: none;
+  transition: 0.3s;
+}
+
+.coupon-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px #007bff50;
+}
+
+.coupon-btn {
+  padding: 10px 14px;
+  background-color: #1e88e5;   /* Royal Blue */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.coupon-btn:hover {
+  background-color: #0056b3;
+}

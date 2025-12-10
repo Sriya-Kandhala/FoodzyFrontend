@@ -1,0 +1,179 @@
+.veg-container {
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.veg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.veg-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.2s ease;
+}
+
+.veg-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Image box + ADD button */
+.img-box {
+  position: relative;
+  text-align: center;
+}
+
+.img-box img {
+  width: 160px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.add-btn {
+  position: absolute;
+  bottom: -12px;
+  right: 10px;
+  padding: 6px 18px;
+  background: white;
+  border: 2px solid #ff2e63;
+  color: #ff2e63;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Prices */
+.price-row {
+  margin-top: 20px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #00a651;
+}
+
+.old-price {
+  text-decoration: line-through;
+  margin-left: 10px;
+  color: #888;
+}
+
+.offer {
+  font-size: 14px;
+  font-weight: 600;
+  color: #00a651;
+}
+
+/* Name + Pack */
+.name {
+  margin-top: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.pack {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Tag box */
+.tag {
+  margin-top: 6px;
+  display: inline-block;
+  padding: 3px 10px;
+  background: #e7f4ff;
+  color: #0077cc;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+/* Rating */
+.rating {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #4caf50;
+  font-weight: 600;
+}
+
+
+/*pagenation*/
+/* Pagination Container */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Previous / Next Buttons */
+.page-btn {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.page-btn:hover:not(:disabled) {
+  background-color: #000;
+}
+
+.page-btn:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Page Number Buttons */
+.page-number-btn {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.page-number-btn:hover {
+  background-color: #ddd;
+  transform: scale(1.05);
+}
+
+/* Active Page Button */
+.page-number-btn.active {
+  background-color: #ff6b00;
+  color: white;
+  border-color: #ff6b00;
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .page-btn,
+  .page-number-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .pagination-container {
+    gap: 6px;
+  }
+}
