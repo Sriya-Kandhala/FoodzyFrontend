@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"; 
-import "./Veg.css"; // using the same CSS styling
+import "./NonVeg.css"; // using the same CSS styling
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, fetchNonVegProducts, fetchVegProducts } from "./store";
 import { toast } from "react-toastify";
