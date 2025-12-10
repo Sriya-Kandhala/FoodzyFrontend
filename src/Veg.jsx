@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"; // ✅ Correct
-import "./Veg.css";
+import "./veg.css";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, fetchVegProducts } from "./store";
 import { toast } from "react-toastify";
