@@ -2,7 +2,7 @@ import axios from "axios";
 
 // ✅ CREATE INSTANCE
 const apiUrl = axios.create({
-  baseURL : "https://localhost:3000/api/v1/products"
+  baseURL : "http://localhost:3000"
 });
 
 // ✅ REQUEST INTERCEPTOR (Attach Token)
