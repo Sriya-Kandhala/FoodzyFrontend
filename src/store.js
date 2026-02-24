@@ -320,7 +320,7 @@ export const registerUser = createAsyncThunk(
   async (formData, { rejectWithValue }) => {
     try {
       const response = await apiUrl.post(
-        "/api/v1/products/register",
+        "api/v1/products/register",
         formData
       );
 
@@ -414,7 +414,7 @@ export const loginUser = createAsyncThunk(
   "login/loginUser",
   async (formData, { rejectWithValue }) => {
     try {
-      const response = await apiUrl.post("/api/v1/products/login", formData);
+      const response = await apiUrl.post("api/v1/products/login", formData);
       return response.data; // {success, message, token, user}
     } catch (err) {
       return rejectWithValue(err.response?.data?.message || "Login failed");
